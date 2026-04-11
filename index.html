@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -64,11 +63,7 @@
         greenery, and a stronger sense of place.
       </p>
 
-      <img
-        data-base="option1-before"
-        alt="Existing plaza conditions"
-        class="section-image auto-image"
-      />
+      <img data-base="option1-before" alt="Existing plaza conditions" class="section-image auto-image" />
       <p class="caption">Existing site conditions before redesign exploration.</p>
     </div>
   </section>
@@ -82,11 +77,7 @@
         focused on access, circulation, comfort, and opportunities for social use.
       </p>
 
-      <img
-        data-base="site-before"
-        alt="Existing site context at Montefiore Square"
-        class="section-image auto-image"
-      />
+      <img data-base="site-before" alt="Existing site context at Montefiore Square" class="section-image auto-image" />
       <p class="caption">Existing site context showing circulation paths, open space, landscaped areas, and the surrounding Harlem streetscape.</p>
     </div>
   </section>
@@ -104,27 +95,13 @@
 
         <div class="before-after">
           <div class="image-card">
-            <div class="image-label-wrap">
-              <span class="image-label">Before</span>
-              <img
-                data-base="option1-before"
-                alt="Option 1 before redesign"
-                class="section-image auto-image"
-              />
-            </div>
-            <p class="caption">Existing condition before Option 1 redesign.</p>
+            <span class="image-label">Before</span>
+            <img data-base="option1-before" alt="Option 1 before redesign" class="section-image auto-image" />
           </div>
 
           <div class="image-card">
-            <div class="image-label-wrap">
-              <span class="image-label">After</span>
-              <img
-                data-base="option1-after"
-                alt="Option 1 after redesign"
-                class="section-image auto-image"
-              />
-            </div>
-            <p class="caption">Option 1 redesign showing a greener wellness-focused plaza.</p>
+            <span class="image-label">After</span>
+            <img data-base="option1-after" alt="Option 1 after redesign" class="section-image auto-image" />
           </div>
         </div>
       </div>
@@ -138,27 +115,13 @@
 
         <div class="before-after">
           <div class="image-card">
-            <div class="image-label-wrap">
-              <span class="image-label">Before</span>
-              <img
-                data-base="option1-before"
-                alt="Option 2 before redesign"
-                class="section-image auto-image"
-              />
-            </div>
-            <p class="caption">Existing plaza condition before Option 2 redesign.</p>
+            <span class="image-label">Before</span>
+            <img data-base="option1-before" alt="Option 2 before redesign" class="section-image auto-image" />
           </div>
 
           <div class="image-card">
-            <div class="image-label-wrap">
-              <span class="image-label">After</span>
-              <img
-                data-base="option2-after"
-                alt="Option 2 after redesign"
-                class="section-image auto-image"
-              />
-            </div>
-            <p class="caption">Option 2 redesign showing a more active community plaza with vendors and gathering space.</p>
+            <span class="image-label">After</span>
+            <img data-base="option2-after" alt="Option 2 after redesign" class="section-image auto-image" />
           </div>
         </div>
       </div>
@@ -168,19 +131,32 @@
   <section id="final">
     <div class="content">
       <h2>Final Proposal</h2>
+
       <p>
-        The final proposal combines the strongest qualities of both design directions:
-        more greenery and shade for wellness, along with flexible gathering space,
-        vendors, seating, and everyday community activity. The result is a plaza that
-        feels calmer, more inviting, and more socially active at the same time.
+        The final proposal combines the strongest qualities of both design directions by creating a plaza that supports both everyday comfort and active community use. Instead of choosing between a calm green space and a social gathering space, the design organizes the plaza so that different areas serve different functions at the same time.
       </p>
 
-      <img
-        src="NEW Final Proposal.png"
-        alt="NEW Final Proposal"
-        class="section-image"
-      />
-      <p class="caption">NEW Final Proposal combining the green wellness features of Option 1 with the social activity and gathering space of Option 2.</p>
+      <p>
+        As visitors enter the plaza from the subway side, the space immediately feels more open and inviting, with clearer pathways guiding movement while still encouraging people to stay. The edges of the plaza are redesigned with expanded planting beds, including trees, shrubs, and flowering plants that create a greener and more comfortable environment. These planted areas help reduce noise from the surrounding streets and provide shade, making the space more usable during the day.
+      </p>
+
+      <p>
+        Seating is arranged throughout the plaza using moveable café chairs and tables, allowing people to choose where and how they sit. Some seating is placed near planting areas for a quieter experience, while other areas are more open and social. This flexibility allows students, families, and residents to use the space in different ways, whether they are studying, relaxing, or meeting with others.
+      </p>
+
+      <p>
+        At the center of the plaza, a flexible open space is maintained to support community activity. This area can be used for everyday gathering, but it also allows for events such as markets, performances, or local programming. By keeping this space open, the plaza can adapt to different needs throughout the day and week without feeling overcrowded or empty.
+      </p>
+
+      <p>
+        The design also strengthens the identity of the plaza through visual elements such as warmer paving materials, organized seating layouts, and the potential for public art. These features help the space feel more connected to the surrounding community rather than like a generic urban plaza.
+      </p>
+
+      <p>
+        In the evening, improved lighting helps extend the usability of the space and makes it feel safer and more welcoming. Overall, the final proposal creates a balanced environment that supports both quiet everyday use and active social life, making Montefiore Square a more functional and meaningful public space.
+      </p>
+
+      <img src="NEW Final Proposal.png" alt="Final Proposal" class="section-image" />
     </div>
   </section>
 
@@ -192,55 +168,6 @@
       </p>
     </div>
   </section>
-
-  <script>
-    const exts = ["jpg", "png", "jpeg", "webp"];
-
-    function setAutoImage(img) {
-      const base = img.getAttribute("data-base");
-      if (!base) return;
-
-      let index = 0;
-
-      function tryNext() {
-        if (index >= exts.length) {
-          img.style.display = "none";
-          return;
-        }
-
-        const src = `${base}.${exts[index]}`;
-        const tester = new Image();
-
-        tester.onload = function () {
-          img.src = src;
-        };
-
-        tester.onerror = function () {
-          index++;
-          tryNext();
-        };
-
-        tester.src = src;
-      }
-
-      tryNext();
-    }
-
-    document.querySelectorAll(".auto-image").forEach(setAutoImage);
-
-    (function setHomeBackgroundDirectly() {
-      const home = document.getElementById("home");
-      const src = "NEW Final Proposal.png";
-      const tester = new Image();
-
-      tester.onload = function () {
-        home.style.background =
-          `linear-gradient(rgba(31, 59, 45, 0.6), rgba(31, 59, 45, 0.6)), url("${src}") center/cover no-repeat`;
-      };
-
-      tester.src = src;
-    })();
-  </script>
 
 </body>
 </html>
